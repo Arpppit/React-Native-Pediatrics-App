@@ -1,7 +1,7 @@
 import { View, Text, ImageBackground, Button, StatusBar} from 'react-native';
 import React from 'react';
 import styles from './styles'
-const homepage = () => {
+const bannerpage = () => {
   return (
     <View style={styles.container}>
       <View style = {styles.headingContainer}> 
@@ -21,4 +21,4 @@ const homepage = () => {
   );
 };
 
-export default homepage;
+export default bannerpage;

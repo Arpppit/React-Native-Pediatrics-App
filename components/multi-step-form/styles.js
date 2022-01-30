@@ -1,16 +1,33 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+  horizCont: {
+    flex:1,
+    height:'100%',
+    flexDirection:'row',
+    
+    width:'500%',
+  },
     container: {
         flex: 1,
         backgroundColor: '#fff',
-        alignItems: 'center',
+        height:'60%',
+        alignItems: 'left',
         justifyContent: 'center',
+        marginLeft:'5%',
+        marginRight:'5%',
+        position:'relative'
       },
-      headingContainer:{
-        height:'80%',
-        width:'100%',
-        alignItems:'center'
+      container1: {
+        flex: 1,
+        backgroundColor: '#fff',
+        height:'60%',
+        alignItems: 'left',
+        justifyContent: 'center',
+        marginLeft:'5%',
+        marginRight:'5%',
+        position:'relative',
+        display:'none'
       },
       titles:{
         marginTop:'110%',
@@ -23,13 +40,18 @@ const styles = StyleSheet.create({
         fontWeight:'600',
         color:'purple',
       },
+      inputL:{
+        position:'relative',
+        marginTop:'30%',
+        marginBottom:'20%',
+      },
       subTitles: {
-        color:'5c5e62',
+        color:'#5c5e62',
         fontSize:16,
         marginBottom:'0',
         fontWeight:'600',
-        textAlign:'center',
-        marginBottom:'10%',
+        textAlign:'left',
+        marginBottom:'5%',
       },
       banner: {
         marginTop:'50%',
@@ -40,12 +62,12 @@ const styles = StyleSheet.create({
         zIndex:'-999'
       },
       startButton:{
-        height:'100%',
+        height:'80%',
         width:'70%',
     
         borderRadius:'20%',
         alignItems:'center',
-        
+        marginBottom:'20%',
       },
       button:{
         height:'20%',
@@ -55,6 +77,11 @@ const styles = StyleSheet.create({
         borderRadius:'50%',
        
       },
+      nextButton:{
+          width:'100%',
+          marginTop:'10%', 
+          position: 'relative'  
+      }
 });
 
 export default styles;
